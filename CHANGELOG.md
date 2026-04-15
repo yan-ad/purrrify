@@ -1,5 +1,26 @@
 # Changelog
 
+## v1.0.1
+
+[compare changes](https://github.com/yanuaraditia/purrrify/compare/v0.0.100...v1.0.1)
+
+### 🩹 Fixes
+
+- Update contributor link to reflect correct GitHub username ([2629f9e](https://github.com/yanuaraditia/purrrify/commit/2629f9e))
+- Update version number to 1.0.0 in package.json ([7c0028d](https://github.com/yanuaraditia/purrrify/commit/7c0028d))
+- Update configuration key from 'dompurify' to 'purrrify' across all relevant files ([e0a4be6](https://github.com/yanuaraditia/purrrify/commit/e0a4be6))
+
+### 🏡 Chore
+
+- Remove v0.0.100 section from CHANGELOG.md ([a82e1c2](https://github.com/yanuaraditia/purrrify/commit/a82e1c2))
+- Rename module and playground from "purrify" to "purrrify" ([0459853](https://github.com/yanuaraditia/purrrify/commit/0459853))
+- Migrate CI workflow from npm to bun ([6eefc77](https://github.com/yanuaraditia/purrrify/commit/6eefc77))
+- Add setup-node step to CI workflow for consistency ([bb2ebb5](https://github.com/yanuaraditia/purrrify/commit/bb2ebb5))
+
+### ❤️ Contributors
+
+- Yanuar Aditia ([@ngalor](https://github.com/ngalor))
+
 ## v1.1.0
 
 ### 🚀 Enhancements
