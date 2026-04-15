@@ -1,6 +1,6 @@
 {
   "name": "purrify",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A Nuxt module that integrates sanitize-html for sanitizing HTML content and protecting against XSS attacks, with support for SSR and multiple profiles.",
   "repository": "yanuaraditia/purrify",
   "keywords": [
