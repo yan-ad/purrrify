@@ -19,4 +19,4 @@
 
 ### ❤️ Contributors
 
-- Yanuar Aditia ([@ngalor](https://github.com/ngalor))
+- Yanuar Aditia ([@yanuaraditia](https://github.com/yanuaraditia))
