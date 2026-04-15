@@ -1,5 +1,17 @@
 # Changelog
 
+## v1.0.2
+
+[compare changes](https://github.com/yanuaraditia/purrrify/compare/v1.0.1...v1.0.2)
+
+### 🩹 Fixes
+
+- Update repository field to include URL object in package.json ([3fb13ee](https://github.com/yanuaraditia/purrrify/commit/3fb13ee))
+
+### ❤️ Contributors
+
+- Yanuar Aditia ([@ngalor](https://github.com/ngalor))
+
 ## v1.0.1
 
 [compare changes](https://github.com/yanuaraditia/purrrify/compare/v0.0.100...v1.0.1)
