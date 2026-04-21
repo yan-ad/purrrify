@@ -22,6 +22,24 @@ export default defineNuxtModule<ModuleOptions>({
       }
     }
 
+    // Ensure Vite pre-bundles the CJS `sanitize-html` package into ESM
+    // so `import sanitizeHtml from 'sanitize-html'` resolves correctly
+    // in the browser. Without this, Vite serves the raw CJS file and
+    // the client throws: "does not provide an export named 'default'".
+    nuxt.options.vite ||= {}
+    nuxt.options.vite.optimizeDeps ||= {}
+    nuxt.options.vite.optimizeDeps.include ||= []
+    if (!nuxt.options.vite.optimizeDeps.include.includes('sanitize-html')) {
+      nuxt.options.vite.optimizeDeps.include.push('sanitize-html')
+    }
+
+    // Also transpile for SSR build to avoid the same CJS interop issue
+    // when Nitro bundles the server entry.
+    nuxt.options.build.transpile ||= []
+    if (!nuxt.options.build.transpile.includes('sanitize-html')) {
+      nuxt.options.build.transpile.push('sanitize-html')
+    }
+
     addTypeTemplate({
       filename: 'types/purrrify.d.ts',
       getContents() {
