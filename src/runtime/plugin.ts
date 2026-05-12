@@ -1,7 +1,15 @@
 import type { DirectiveBinding } from 'vue'
-import sanitizeHtml from 'sanitize-html'
+import * as sanitizeHtmlModule from 'sanitize-html'
 import { defineNuxtPlugin } from '#app'
 import { useRuntimeConfig } from '#imports'
+
+const sanitizeHtml = (() => {
+  if (typeof sanitizeHtmlModule.default === 'function') {
+    return sanitizeHtmlModule.default
+  }
+
+  throw new TypeError('[purrrify] Failed to resolve sanitize-html export')
+})()
 
 export default defineNuxtPlugin(({ vueApp }) => {
   const {
