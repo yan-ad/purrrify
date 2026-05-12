@@ -1,5 +1,17 @@
 # Changelog
 
+## v2.0.1
+
+[compare changes](https://github.com/yanuaraditia/purrrify/compare/v2.0.0...v2.0.1)
+
+### 🩹 Fixes
+
+- Update sanitize-html handling for Vite and add tests for dependency optimization ([c3c59ce](https://github.com/yanuaraditia/purrrify/commit/c3c59ce))
+
+### ❤️ Contributors
+
+- Yan-ad ([@ngalor](https://github.com/ngalor))
+
 ## v2.0.0
 
 [compare changes](https://github.com/yanuaraditia/purrrify/compare/v1.0.2...v2.0.0)
